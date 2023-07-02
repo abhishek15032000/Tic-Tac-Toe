@@ -1,0 +1,141 @@
+
+#gameBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell:hover {
+    background-color: #eee;
+  }
+  
+  /* chosing marker modal */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal-content span {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .modal-content button.first-marker {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .modal-content button.second-marker {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  .modal-content button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /**
+   style for the cell
+  **/
+  .cell{
+    cursor: pointer;
+  }
+  /**
+    invalid cell css
+  **/
+  .cell.filled:hover {
+    cursor: not-allowed;
+  }
+
+  /**
+     css for result-modal.
+  */
+  .resultModal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .resultModal .modal-content {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .resultModal button#resetGame {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .resultModal button#resetGame:hover {
+    background-color: #45a049;
+  }
+  .goBack{
+    margin-top:10px;
+  }
+  .goBack button{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+  }
+
+  .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

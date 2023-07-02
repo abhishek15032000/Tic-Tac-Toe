@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css"> <!-- Add your CSS file here -->
+    <script src="./js/game.js" defer></script> <!-- Add your JavaScript file here -->
+    <link rel="stylesheet" href="./styles/game.css">
+    <!-- website icon -->
+        <link rel="icon" type="image/png" href="./images/tic-tac-toe.png">
+    <!-- website icon -->
+</head>
+<body>
+    <header class="title-element">
+        <div> Tic Tac Toe </div>
+  </header>
+
+    <div id="gameBoard">
+        <!-- The game board will be dynamically generated here using JavaScript -->
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p>Please select one of the following choices:</p>
+            <button class="first-marker" id="X">
+                X
+            </button>
+            <span>OR</span>
+            <button class="second-marker" id="O">
+                O
+            </button>
+            <div class="goBack">
+                <button id="goBackBtn">Go Back To Home Page</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="resultModal" id="resultModal">
+         <div class="modal-content">
+                  <!-- The result will be dynamically generated here using JavaScript -->
+         </div>
+    </div>
+</body>
+</html>
